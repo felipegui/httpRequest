@@ -7,7 +7,15 @@ require('./header.php');
     <label>
         Name:
         </br>
-        <input type="text" name="name" />
+        <input type="text" name="name" autocomplete="off"/>
+    </label>
+    </br>
+    </br>
+
+    <label>
+        E-mail:
+        </br>
+        <input type="text" name="email" autocomplete="off"/>
     </label>
     </br>
     </br>
@@ -15,7 +23,7 @@ require('./header.php');
     <label>
         Idade:
         </br>
-        <input type="text" name="age" />
+        <input type="text" name="age" autocomplete="off" />
     </label>
     </br>
     </br>
