@@ -1,5 +1,16 @@
 <?php
+session_start();
 require('./header.php');
+
+/*
+Ao se iniciar uma sessão, certifique-se de
+necessariamente declarar as variáveis de sessões assim: $_SESSION
+*/
+
+if( isset($_SESSION['aviso']) ) {
+    echo $_SESSION['aviso'];
+    $_SESSION['aviso'] = '';
+}
 ?>
 
 <form method="POST" action="recebedor.php">
