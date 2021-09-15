@@ -1,6 +1,9 @@
 <?php
 session_start();
 require('./header.php');
+require('./config.php');
+
+include('./teste.php');
 
 /*
 Ao se iniciar uma sessão, certifique-se de
@@ -16,7 +19,7 @@ if( isset($_SESSION['aviso']) ) {
 <form method="POST" action="recebedor.php">
 
     <label>
-        Name:
+        Name: <?php echo $usuario ?>
         </br>
         <input type="text" name="name" autocomplete="off"/>
     </label>
