@@ -1,9 +1,14 @@
 <?php
 session_start();
-require('./header.php');
+/*
+require_once é um tipo de proteção ao seu sistema que
+evita que você faça duplicatas de informações nas importações
+*/
+require_once('./header.php');
+require_once('./header.php');
 require('./config.php');
 
-include('./teste.php');
+//include('./teste.php');
 
 /*
 Ao se iniciar uma sessão, certifique-se de
